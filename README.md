@@ -6,6 +6,10 @@
 [![CurseForge](http://cf.way2muchnoise.eu/full_pistorder_downloads.svg)](https://legacy.curseforge.com/minecraft/mc-mods/pistorder)
 [![Modrinth](https://img.shields.io/modrinth/dt/lpin1bEg?label=Modrinth%20Downloads)](https://modrinth.com/mod/pistorder)
 
+> **Unofficial port.** This fork adds Minecraft 26.3 (Fabric) support on top of upstream Pistorder v1.6.15.
+> It is not affiliated with or endorsed by Fallen_Breath; the original project is at [Fallen-Breath/pistorder](https://github.com/Fallen-Breath/pistorder).
+> Changes in this fork: 26.3 build target, render code adapted to the 26.3 render pass API, Fabric API is no longer bundled (install it separately).
+
 A mod that shows the block movement order of a piston. Thanks [CarpetClient](https://github.com/X-com/CarpetClient) for the idea of such a cool tool
 
 ## Usage

@@ -30,7 +30,7 @@ import net.minecraft.core.BlockPos;
 //$$ import net.minecraft.network.chat.FormattedText;
 //#endif
 
-//#if MC >= 12105
+//#if 12105 <= MC && MC < 26.3
 //$$ import com.mojang.blaze3d.opengl.GlStateManager;
 //#endif
 
@@ -120,7 +120,9 @@ public class StringDrawer
 			//#endif
 
 			// visibleThroughObjects
-			//#if MC >= 12105
+			//#if MC >= 26.3
+			//$$ // handled by the depth-less render pass in BatchedTextDrawer
+			//#elseif MC >= 12105
 			//$$ GlStateManager._disableDepthTest();
 			//#else
 			RenderSystem.disableDepthTest();
@@ -257,7 +259,9 @@ public class StringDrawer
 			//$$ RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			//#endif
 
-			//#if MC >= 12105
+			//#if MC >= 26.3
+			//$$ // handled by the depth-less render pass in BatchedTextDrawer
+			//#elseif MC >= 12105
 			//$$ GlStateManager._enableDepthTest();
 			//#else
 			RenderSystem.enableDepthTest();
